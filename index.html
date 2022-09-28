@@ -8,63 +8,91 @@
     <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-        <div class="header">
-            <div id="progress">
-                <div id="progress-bar"></div>
-                <ul id="progress-num">
-                  <li class="step One">1</li>
-                  <li Text1> Cabin</li>
-                  <li class="step Two">2</li>
-                  <li Text2> Meals</li>
-                  <li class="step ">3</li>
-                  <li Text> Upgrades</li>
-                  <li class="step">4</li>
-                  <li Text> Payment</li>
-                </ul>
-              </div>
-        </div>
-
-            <div class="information">
-                <p> Meal Preferences</p>
-                <p1> You flight comes with breakfast, lunch and dinner. Please make your selections below.<br>
-                    Changes to your order can be made up to 48 hours before you flight <br>
-                </p1>
-                
+    <div class="header">
+        <div id="progress">
+            <div id="progress-bar"></div>
+            <ul id="progress-num">
+                <li class="step One">1</li>
+                <li Text1> Cabin</li>
+                <li class="step Two">2</li>
+                <li Text2> Meals</li>
+                <li class="step ">3</li>
+                <li Text> Upgrades</li>
+                <li class="step">4</li>
+                <li Text> Payment</li>
+            </ul>
             </div>
+    </div>
 
-            <div class="form">
+    <div class="information">
+        <p> Meal Preferences</p>
+        <p1> You flight comes with breakfast, lunch and dinner. Please make your selections below.<br>
+            Changes to your order can be made up to 48 hours before you flight <br>
+        </p1>
+        
+    </div>
+
+    <form action="./index2.html">
+        <div class="containerForms">
+            <div class="formMeals">
                 <label> <p1>Breackfast </p1><br> </label>   
-                <Select class="Breakfast"> 
+                <Select> 
                     <option value = "Sausage"> Sausage Egg Scramble Bowl</option>
                 </Select>
-
-                    <div>
-                        <label> <p1>Lunch </p1> <br> </label>   
-                        <Select class="Lunch"> 
-                            <option value = "Sausage"> Club Sandwich Meal</option>
-                        </Select>
-                    </div>
-                            <div>
-                                <label> <p1> Dinner</p1> <br> </label>   
-                                <Select class="Dinner"> 
-                                    <option value = "Sausage"> Wagyu Beef Sliders Meal</option>
-                                </Select>
-                            </div>
-
-                            <div>
-                                <label> <input type="checkbox" id="cbox1" value="first_checkbox"> I'd like dessert,too! </label>
-                            </div>
-
-                            <div class="button">
-                                <button type="submit" value="submit">
-                                    Back
-                                </button>
-                            </div>
-            </div>
-
-
-
-                </div>
     
+                <div>
+                    <label> <p1>Lunch </p1> <br> </label>   
+                    <Select> 
+                        <option value = "clubSandwich"> Club Sandwich Meal</option>
+                    </Select>
+                </div>
+                <div>
+                    <label> <p1> Dinner</p1> <br> </label>   
+                    <Select> 
+                        <option value = "wagyuBeff"> Wagyu Beef Sliders Meal</option>
+                    </Select>
+                </div>
+            </div>
+            <div class="formDrinks">
+                <label> <p1>Drink</p1><br> </label>   
+                <Select> 
+                    <option value = "coffe"> Coffe</option>
+                </Select>
+    
+                <div>
+                    <label> <p1>Drink</p1> <br> </label>   
+                    <Select> 
+                        <option value = "cranBerryJuice"> Cranberry juice</option>
+                    </Select>
+                </div>
+                <div>
+                    <label> <p1> Drink</p1> <br> </label>   
+                    <Select> 
+                        <option value = "redWine"> Red wine</option>
+                    </Select>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <label> <input type="checkbox" id="cbox1" value="first_checkbox"> I'd like dessert,too! </label>
+        </div>
+
+        <div class="containerButtons">
+            <!-- <div class="button"> -->
+                <button type="submit" value="submit" class="buttonLeft">
+                    Back
+                </button> 
+            <!-- </div> -->
+            <!-- <div class="button"> -->
+                <button type="submit" value="submit" class="buttonRight">
+                    Continue
+                </button>
+            <!-- </div> -->
+        </div>
+
+    </form>
+
 </body>
 </html>
